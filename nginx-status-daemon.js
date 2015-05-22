@@ -32,7 +32,6 @@ function postStreamStats() {
 
 		try {
 			parser.parseString(body, function (error, data) {
-				console.log('DDDD' + JSON.stringify(data));
 				request({
 					uri: backendUrl,
 					method: 'POST',
@@ -53,7 +52,7 @@ function postStreamStats() {
 
 cli.main(function () {
 	var daemon = startStopDaemon(options, function () {
-		setInterval(postStreamStats, 3000);
+		setInterval(postStreamStats, 30000);
 	});
 
 	daemon.on('start', function () {
