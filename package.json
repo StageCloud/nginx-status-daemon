@@ -20,6 +20,7 @@
     "cli": "^0.6.6",
     "request": "^2.55.0",
     "start-stop-daemon": "^0.1.1",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "xml2js": "^0.4.8"
   }
 }
