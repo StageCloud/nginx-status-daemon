@@ -1,0 +1,3 @@
+node_modules
+nginx-status-daemon.log
+nginx-status-daemon-error.log
